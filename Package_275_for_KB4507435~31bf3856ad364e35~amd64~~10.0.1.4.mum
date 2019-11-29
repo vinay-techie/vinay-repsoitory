@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v3" manifestVersion="1.0" description="Fix for KB4507435" displayName="default" company="Microsoft Corporation" copyright="Microsoft Corporation" supportInformation="http://support.microsoft.com/?kbid=4507435" creationTimeStamp="2019-07-04T19:58:31Z" lastUpdateTimeStamp="2019-07-04T19:58:31Z">
+	<assemblyIdentity name="Package_275_for_KB4507435" version="10.0.1.4" language="neutral" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35"/>
+	<package identifier="KB4507435" releaseType="Security Update" restart="possible" psfName="Windows10.0-KB4507435-x64.psf">
+		<parent buildCompare="EQ" integrate="separate" disposition="detect">
+			<assemblyIdentity name="Microsoft-Windows-ImageBasedSetup-Media-Legacy-Package-enduser" language="uk-UA" version="10.0.17134.1" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" buildType="release"/>
+			<parent buildCompare="EQ" integrate="separate" disposition="detect">
+				<assemblyIdentity name="WinPE-LegacySetup-Package" version="10.0.17134.1" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35"/>
+			</parent>
+		</parent>
+		<installerAssembly name="Microsoft-Windows-ServicingStack" version="6.0.0.0" language="neutral" processorArchitecture="amd64" versionScope="nonSxS" publicKeyToken="31bf3856ad364e35"/>
+		<update name="4507435-383_neutral">
+			<applicable disposition="staged">
+				<updateComponent elevate="revision">
+					<assemblyIdentity name="Microsoft-Windows-ImageBasedSetup-Media-Legacy-enduser.Resources" version="10.0.17134.83" processorArchitecture="amd64" language="uk-UA" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS"/>
+				</updateComponent>
+			</applicable>
+			<component>
+				<assemblyIdentity name="919e9acf1d60e074cede3e01fc7978df" version="10.0.17134.83" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS"/>
+			</component>
+		</update>
+	</package>
+</assembly>
