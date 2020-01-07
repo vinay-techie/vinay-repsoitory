@@ -37,6 +37,9 @@ catch(PDOException $e)
     echo $sql . "
 " . $e->getMessage();
     }
+$mysql="INSERT INTO students(ROLL,name) VALUES('18a31a0531','vinay');
+$conn->exec($mysql);
+echo "inserted";
 
 echo "</pre>\n";
    
