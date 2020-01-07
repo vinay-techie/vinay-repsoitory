@@ -29,10 +29,7 @@ $sql="CREATE TABLE student(
       )";
 $conn->exec($sql);
 echo "table created";
-$mysql="INSERT INTO student(ROLL,name) VALUES(18A31A0531,vinay)";
-$conn->exec($mysql);
-       
-$y = $x->query("SELECT * FROM student WHERE ROLL='$_POST[data]'");
+$y = $conn->query("SELECT * FROM student WHERE ROLL='$_POST[data]'");
 while($row = $y->fetch(PDO::FETCH_ASSOC)){
    echo "ROLL NUMBER:".$row[ROLL]."</br>";
    echo "NAME:".$row[name]."</br>";
