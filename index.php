@@ -25,7 +25,7 @@ catch (PDOException $e) {
 echo "connected succesfully</br>";
 try
 {
-$sql="CREATE TABLE gang1(
+$sql="CREATE TABLE list(
       ROLL varchar(128),
       name varchar(128)
       )";
@@ -39,7 +39,7 @@ catch(PDOException $e)
     }
 try
 {
-$mysql="INSERT INTO students(ROLL,name) VALUES ('18a31a0531','vinay'),
+$mysql="INSERT INTO list(ROLL,name) VALUES ('18a31a0531','vinay'),
                                  ('18a31a0531','vinay'),
                                  ('18a31a0535','chala'),
                                  ('18a31a0532','raviraja')";
@@ -51,7 +51,7 @@ catch(PDOException $e)
     echo $sql . "
 " . $e->getMessage();
     }
-$y = $conn->query("SELECT * FROM gang1 WHERE ROLL='$_POST[data]'");
+$y = $conn->query("SELECT * FROM list WHERE ROLL='$_POST[data]'");
 while($row= $y->fetch(PDO::FETCH_ASSOC))
 {
     print_r($row);
