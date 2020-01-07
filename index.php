@@ -23,6 +23,13 @@ catch (PDOException $e) {
     die(print_r($e));
 }
 echo "connected succesfully</br>";
+$sql="CREATE TABLE student(
+      ROLL varchar(128),
+      name varchar(128)
+      )";
+$conn->exec($sql);
+echo "table created";
+       
 $y = $x->query("SELECT * FROM student WHERE ROLL='$_POST[data]'");
 while($row = $y->fetch(PDO::FETCH_ASSOC)){
    echo "ROLL NUMBER:".$row[ROLL]."</br>";
