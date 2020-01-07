@@ -4,7 +4,7 @@
 <body style='background-color:#E0FFFF;opacity:0.5'>
 <h1 style='text-align:center'> CSE-B</h1>
 </body>
-<fieldset style='display:inline;position:relative;left:32%;border-radius:10px'>
+<fieldset style='display:inline;position:relative;left:39%;border-radius:10px'>
 <form  method='post'>
 <p style='font-size:13px'>ENTER YOUR ROLL NUMBER</p>
 <input placeholder="ROLL" style='border-radius:10px; margin-bottom:10px' type='text' name='data'\><br>
