@@ -39,7 +39,7 @@ catch(PDOException $e)
     }
 try
 {
-$mysql="INSERT INTO students(ROLL,name) VALUES ('18a31a0531','vinay')
+$mysql="INSERT INTO students(ROLL,name) VALUES ('18a31a0531','vinay'),
                                  ('18a31a0531','vinay'),
                                  ('18a31a0535','chala'),
                                  ('18a31a0532','raviraja')";
