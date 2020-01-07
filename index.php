@@ -29,7 +29,7 @@ $sql="CREATE TABLE student(
       )";
 $conn->exec($sql);
 echo "table created";
-echo <pre/n>$sql</pre/n>; 
+echo $sql;
        
 $y = $x->query("SELECT * FROM student WHERE ROLL='$_POST[data]'");
 while($row = $y->fetch(PDO::FETCH_ASSOC)){
