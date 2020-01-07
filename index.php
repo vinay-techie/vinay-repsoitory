@@ -51,7 +51,7 @@ catch(PDOException $e)
     echo $sql . "
 " . $e->getMessage();
     }
-$y = $conn->query("SELECT * FROM gang WHERE ROLL='$_POST[data]'")
+$y = $conn->query("SELECT * FROM gang WHERE ROLL='$_POST[data]'");
 while($row= $y->fetch(PDO::FETCH_ASSOC))
 {
     print_r($row);
