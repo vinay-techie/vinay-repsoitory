@@ -10,7 +10,15 @@
 </fieldset>
 <?php
 echo "<pre>\n";
-$x = new PDO('mysql:host=localhost;dbname=cse','root','root');
+// PHP Data Objects(PDO) Sample Code:
+try {
+    $conn = new PDO("sqlsrv:server = tcp:cseb.database.windows.net,1433; Database = firsrdb", "vinay", "ardhanisou@123");
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+}
+catch (PDOException $e) {
+    print("Error connecting to SQL Server.");
+    die(print_r($e));
+}
 echo "connected succesfully</br>";
 $y = $x->query("SELECT * FROM student WHERE ROLL='$_POST[data]'");
 while($row = $y->fetch(PDO::FETCH_ASSOC)){
