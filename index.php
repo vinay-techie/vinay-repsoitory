@@ -39,15 +39,24 @@ catch(PDOException $e)
     }
 try
 {
-$mysql="INSERT INTO students(ROLL,name) VALUES('18a31a0531','vinay')";
+$mysql="INSERT INTO students(ROLL,name) VALUES ('18a31a0531','vinay')
+                                 ('18a31a0531','vinay'),
+                                 ('18a31a0535','chala'),
+                                 ('18a31a0532','raviraja')";
 $conn->exec($mysql);
-echo "create";
+echo "createed database";
 }
 catch(PDOException $e)
     {
     echo $sql . "
 " . $e->getMessage();
     }
+$y = $conn->query("SELECT * FROM gang WHERE ROLL='$_POST[data]'")
+while($row= $y->fetch(PDO::FETCH_ASSOC))
+{
+    print_r($row);
+}
+
 
 
 echo "</pre>\n";
