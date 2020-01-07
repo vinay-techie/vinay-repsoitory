@@ -2,7 +2,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
 </head>
 <body style='background-color:#E0FFFF;opacity:0.5'>
-<h1 style='position:relative;left:40%;border-radius:10px'> CSE-B</h1>
+<h1 style='text-align:center'> CSE-B</h1>
 </body>
 <fieldset style='display:inline;position:relative;left:32%;border-radius:10px'>
 <form  method='post'>
