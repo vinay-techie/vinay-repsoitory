@@ -23,12 +23,20 @@ catch (PDOException $e) {
     die(print_r($e));
 }
 echo "connected succesfully</br>";
+try
+{
 $sql="CREATE TABLE student(
       ROLL varchar(128),
       name varchar(128)
       )";
 $conn->exec($sql);
 echo "table created";
+}
+catch(PDOException $e)
+    {
+    echo $sql . "
+" . $e->getMessage();
+    }
 
 echo "</pre>\n";
    
