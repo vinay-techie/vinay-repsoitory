@@ -25,7 +25,7 @@ catch (PDOException $e) {
 echo "connected succesfully</br>";
 try
 {
-$sql="CREATE TABLE students(
+$sql="CREATE TABLE gang(
       ROLL varchar(128),
       name varchar(128)
       )";
