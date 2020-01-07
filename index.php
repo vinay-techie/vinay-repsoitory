@@ -25,7 +25,7 @@ catch (PDOException $e) {
 echo "connected succesfully</br>";
 try
 {
-$sql="CREATE TABLE gang(
+$sql="CREATE TABLE gang1(
       ROLL varchar(128),
       name varchar(128)
       )";
@@ -51,7 +51,7 @@ catch(PDOException $e)
     echo $sql . "
 " . $e->getMessage();
     }
-$y = $conn->query("SELECT * FROM gang WHERE ROLL='$_POST[data]'");
+$y = $conn->query("SELECT * FROM gang1 WHERE ROLL='$_POST[data]'");
 while($row= $y->fetch(PDO::FETCH_ASSOC))
 {
     print_r($row);
