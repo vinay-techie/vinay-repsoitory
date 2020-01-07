@@ -1,3 +1,6 @@
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
 <body style='background-color:#E0FFFF;opacity:0.5'>
 <h1 style='text-align:center'> CSE-B</h1>
 </body>
