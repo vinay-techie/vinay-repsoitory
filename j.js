@@ -1,4 +1,4 @@
-var city=prompt("enter city name",city);
+var city=prompt("Enter city name to check the wheather conditions",city);
 $.getJSON("https://api.openweathermap.org/data/2.5/weather?q="+city+"&units=imperial&APPID=020990759be9838e00c03fe0f7c702bb",
 	function(data){
 	console.log(data);
